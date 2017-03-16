@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+<h1 >Formulario PHP Ejemplo de validación</h1>
+Nombre: <input type="text" name="Nombre"><br>
+E-mail: <input type="text" name="correo"><br>
+Sitio Web: <input type="text" name="web"><br>
+Comentario: <textarea name="comentario" rows="5" cols="40"></textarea><br>
+Genero: <input type="radio" name="Genero" value="female">Femenino
+<input type="radio" name="Genero" value="male">Masculino
+<input type="submit">
+</form>
+</body>
+</html>
