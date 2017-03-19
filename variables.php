@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>VARIABLES</title>
-</head>
-<body>
-<?php
-$x = 5;
-$Y = 10;
+<?php 
+// inicio de la secion 
+session_start();// debe ser lo primero 	que agregamos!
 
-function mytest(){
-	global $x, $Y;
-	$Y = $x + $Y;
-}
-
-mytest();
-echo $Y."<br>";
-
-
-
-$a = 6;
-$b = 4;
-function mytest1(){
-	$GLOBALS['b'] = $GLOBALS['a'] + $GLOBALS['b'];
-}
-mytest1();
-echo $b;
-?>
-</body>
-</html>
+ ?>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <?php $_SESSION["favcolor"] = "verde";
+ $_SESSION["favanimal"] = "gato";
+echo "Las variables de session han sido cargadas!";
+ ?>
+ </body>
+ </html>
